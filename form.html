@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment form</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
+    <div class="container">
     <form action="">
-        <h1>Payment Form</h1>
+        <h1 class="main_heading">Payment Form</h1>
         <h2>Contact Information</h2>
-        <p>Name:* <input type="text" name="name" required> </p>
+        <p>Name:* <input type="text" name="name" placeholder="Vaibhav Malhotra"  required> </p>
     <fieldset><!--Puts in a box-->
         <legend>Gender</legend>
             <p>
@@ -18,11 +20,11 @@
             Female <input type="radio" name="Gender" id="female">
             </p>
     </fieldset>
-    <p>Address: <textarea name="address" id="address" cols="80" rows="5"></textarea></p>
+    <p>Address: <textarea name="address" placeholder="Enter your Address" id="address" cols="80" rows="5"></textarea></p>
     <p>Email: <input type="email" name="email" id="email" ></p>
     <p>Pincode: <input type="number" name="pincode" id="pincode"></p>
 
-    <h2>Payment information</h2>
+    <h2>Payment Information</h2>
     <p>Card Type:
         <select name="card_type" id="card_type">
             <option value="">--Select a card type--</option>
@@ -41,8 +43,9 @@
         CVV <input type="password" name="cvv" id="cvv">
         
     </p>
-    <p>
-        <input type="submit" value="Pay Now"></p>
+    <p >
+        <input  class="selector" type="submit" value="Pay Now"></p>
     </form>
+    </div>
 </body>
 </html>
